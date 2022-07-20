@@ -1,12 +1,17 @@
+import { Grid, Paper } from "@mui/material";
 import React from "react";
 
 interface IPokeList {
   name: string,
-  url: string,
+  onClick: () => void,
 }
 
-export const PokeList = ({ name, url }: IPokeList) => {
+export const PokeList = ({ name, onClick }: IPokeList) => {
   return (
-    <div>{name}</div>
+    <>
+      <Grid item xs={2.3} onClick={onClick} className='pokemon'>
+        <Paper>{name}</Paper>
+      </Grid>
+    </>
   )
 };

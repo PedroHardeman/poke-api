@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.wrapper {
+  padding: 50px;
+}
+
+.pokemon:hover {
+  cursor: pointer;
+}
